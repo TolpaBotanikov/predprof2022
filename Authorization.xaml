@@ -1,0 +1,17 @@
+﻿<Page x:Name="Authorization_window" x:Class="predprof2022.Authorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:predprof2022"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="440" Width="810" SizeChanged="Authorization_window_SizeChanged">
+    <Grid x:Name="Authorization_grid" Height="200" Margin="0" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <PasswordBox x:Name="Password" HorizontalAlignment="Center" Height="25" Margin="0,100,0,0" VerticalAlignment="Top" Width="200" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="Login" Height="25" Margin="0,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" HorizontalAlignment="Center" Grid.ColumnSpan="3"/>
+        <Label x:Name="Password_label" Content="Введите пароль:" HorizontalAlignment="Center" Height="25" Margin="0,75,0,0" VerticalAlignment="Top" Width="200" Grid.ColumnSpan="3"/>
+        <Label x:Name="Login_label" Content="Введите логин:" HorizontalAlignment="Center" Height="25" Margin="0" VerticalAlignment="Top" Width="200" Grid.ColumnSpan="3"/>
+        <Button x:Name="Enter_but" Content="Ввод" HorizontalAlignment="Center" Height="25" Margin="0,150,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1"/>
+        <Label x:Name="Error_label" Content="" HorizontalAlignment="Center" Height="25" Margin="0,175,0,0" VerticalAlignment="Top" Width="200" Padding="5" HorizontalContentAlignment="Center" Grid.ColumnSpan="3"/>
+    </Grid>
+</Page>
