@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace predprof2022
 {
     /// <summary>
-    /// Логика взаимодействия для Registration.xaml
+    /// Логика взаимодействия для Access_edit.xaml
     /// </summary>
-    public partial class Registration : Page
+    public partial class Access_edit : Page
     {
-        public Registration()
+        public Access_edit()
         {
             InitializeComponent();
-        }
-
-        private void CheckBox_Checked(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

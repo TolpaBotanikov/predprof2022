@@ -16,16 +16,16 @@ using System.Windows.Shapes;
 namespace predprof2022
 {
     /// <summary>
-    /// Логика взаимодействия для Registration.xaml
+    /// Логика взаимодействия для Menu.xaml
     /// </summary>
-    public partial class Registration : Page
+    public partial class Menu : Page
     {
-        public Registration()
+        public Menu()
         {
             InitializeComponent();
         }
 
-        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }

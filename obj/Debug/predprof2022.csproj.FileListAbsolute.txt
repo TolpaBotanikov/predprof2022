@@ -17,3 +17,4 @@ C:\Users\Артур\source\repos\predprof2022\predprof2022\obj\Debug\Authorizati
 C:\Users\Артур\source\repos\predprof2022\predprof2022\obj\Debug\Registration.baml
 C:\Users\Артур\source\repos\predprof2022\predprof2022\obj\Debug\Main.g.cs
 C:\Users\Артур\source\repos\predprof2022\predprof2022\obj\Debug\Main.baml
+C:\Users\Артур\source\repos\predprof2022\predprof2022\obj\Debug\App.baml

@@ -6,12 +6,19 @@
         xmlns:local="clr-namespace:predprof2022"
         mc:Ignorable="d"
         Title="MainWindow" Height="440" Width="810" SizeChanged="Authorization_window_SizeChanged">
-    <Grid x:Name="Authorization_grid" Height="200" Margin="0" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center">
-        <PasswordBox x:Name="Password" HorizontalAlignment="Center" Height="25" Margin="0,100,0,0" VerticalAlignment="Top" Width="200" Grid.ColumnSpan="3"/>
-        <TextBox x:Name="Login" Height="25" Margin="0,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" HorizontalAlignment="Center" Grid.ColumnSpan="3"/>
-        <Label x:Name="Password_label" Content="Введите пароль:" HorizontalAlignment="Center" Height="25" Margin="0,75,0,0" VerticalAlignment="Top" Width="200" Grid.ColumnSpan="3"/>
-        <Label x:Name="Login_label" Content="Введите логин:" HorizontalAlignment="Center" Height="25" Margin="0" VerticalAlignment="Top" Width="200" Grid.ColumnSpan="3"/>
-        <Button x:Name="Enter_but" Content="Ввод" HorizontalAlignment="Center" Height="25" Margin="0,150,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1"/>
-        <Label x:Name="Error_label" Content="" HorizontalAlignment="Center" Height="25" Margin="0,175,0,0" VerticalAlignment="Top" Width="200" Padding="5" HorizontalContentAlignment="Center" Grid.ColumnSpan="3"/>
-    </Grid>
+    <StackPanel x:Name="Authorization_grid" Margin="255,125,254.6,65" Height="250" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+        <Label Content="Авторизация" HorizontalAlignment="Left" Height="40" Margin="18,0,0,0" Width="251" HorizontalContentAlignment="Center" FontSize="20"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Width="112" TextAlignment="Right" VerticalAlignment="Center" HorizontalAlignment="Left"><Run Text="Введите л"/><Run Text="огин:"/></TextBlock>
+            <TextBox x:Name="loginTb" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="30,5,31,5" Width="239">
+            <TextBlock Width="109" TextAlignment="Right" VerticalAlignment="Center" HorizontalAlignment="Center"><Run Text="Введите "/><Run Text="п"/><Run Text="ароль:"/></TextBlock>
+            <PasswordBox x:Name="passwordTb" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+        <Button x:Name="Auth_but" Content="Войти" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="или" Height="25" Margin="0" Width="168" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="Reg_but" Content="Зарегестрироваться" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label x:Name="Error_lab" Content="" Height="25" Margin="0" Width="148" HorizontalContentAlignment="Center"/>
+    </StackPanel>
 </Page>
