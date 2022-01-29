@@ -16,11 +16,11 @@
             <ComboBox x:Name="Users_list" HorizontalAlignment="Center" Height="25" Margin="75,75,74,0" VerticalAlignment="Top" Width="250"/>
             <Label Content="Список АКЭС, доступных пользователю:" HorizontalAlignment="Center" Height="25" Margin="75,105,75,0" VerticalAlignment="Top" Width="250" HorizontalContentAlignment="Center"/>
             <ComboBox x:Name="AKES_list" HorizontalAlignment="Center" Height="25" Margin="75,130,74,0" VerticalAlignment="Top" Width="251"/>
-            <Label Content="Добавить или удалить АКЭС пользователю" HorizontalAlignment="Center" Height="25" Margin="75,180,75,0" VerticalAlignment="Top" Width="250" HorizontalContentAlignment="Center"/>
+            <Label Content="Добавить или удалить доступ к АКЭС пользователю" HorizontalAlignment="Center" Height="25" Margin="0,180,0,0" VerticalAlignment="Top" Width="296" HorizontalContentAlignment="Center"/>
             <ComboBox x:Name="AKES_list_to_add" HorizontalAlignment="Center" Height="25" Margin="76,210,74,0" VerticalAlignment="Top" Width="250"/>
-            <Button x:Name="Add_but" Content="Добавить" HorizontalAlignment="Center" Height="40" Margin="75,240,210,0" VerticalAlignment="Top" Width="115" Click="Button_Click" FontSize="15"/>
-            <Button x:Name="Del_but" Content="Удалить" HorizontalAlignment="Center" Height="40" Margin="209,240,76,0" VerticalAlignment="Top" Width="115" Click="Button_Click" FontSize="15"/>
-            <Button x:Name="Add_but_Copy" Content="Обратно в меню" HorizontalAlignment="Center" Height="40" Margin="0,310,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click" FontSize="15"/>
+            <Button x:Name="Add_but" Content="Добавить" HorizontalAlignment="Center" Height="40" Margin="75,240,210,0" VerticalAlignment="Top" Width="115" FontSize="15"/>
+            <Button x:Name="Del_but" Content="Удалить" HorizontalAlignment="Center" Height="40" Margin="209,240,76,0" VerticalAlignment="Top" Width="115" FontSize="15"/>
+            <Button x:Name="Add_but_Copy" Content="Обратно в меню" HorizontalAlignment="Center" Height="40" Margin="0,310,0,0" VerticalAlignment="Top" Width="150" FontSize="15"/>
 
         </Grid>
 

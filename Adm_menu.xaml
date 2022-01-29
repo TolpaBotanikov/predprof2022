@@ -9,13 +9,15 @@
       Title="Adm_menu">
 
     <Grid>
-        <Grid Height="350" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" Margin="200,49.8">
+        <Grid Height="415" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" Margin="201,25,199,9.6">
             <Label Content="Меню" HorizontalAlignment="Center" Height="40" Margin="0,5,0,0" Width="251" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Top"/>
-            <Button x:Name="Graf_but" Content="Просмотреть график" HorizontalAlignment="Center" Height="40" Margin="0,150,0,0" VerticalAlignment="Top" Width="250" Click="Button_Click" FontSize="15"/>
-            <Button x:Name="Table_but" Content="Просмотреть таблицу" HorizontalAlignment="Center" Height="40" Margin="0,220,0,0" VerticalAlignment="Top" Width="250" Click="Button_Click" FontSize="15"/>
+            <Button x:Name="Graf_but" Content="Просмотреть график" HorizontalAlignment="Center" Height="40" Margin="74,135,76,0" VerticalAlignment="Top" Width="250" FontSize="15"/>
+            <Button x:Name="Table_but" Content="Просмотреть таблицу" HorizontalAlignment="Center" Height="40" Margin="0,185,0,0" VerticalAlignment="Top" Width="250" FontSize="15"/>
             <ComboBox x:Name="AKES_list" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top" Width="250" Height="25"/>
             <Label Content="Выберите АКЭС" HorizontalAlignment="Center" Height="25" Margin="0,70,0,0" VerticalAlignment="Top" Width="250" HorizontalContentAlignment="Center"/>
-            <Button x:Name="Access_but" Content="Редактировать доступ к АКЭС" HorizontalAlignment="Center" Height="40" Margin="74,290,76,0" VerticalAlignment="Top" Width="250" Click="Button_Click" FontSize="15"/>
+            <Button x:Name="Access_but" Content="Редактировать доступ к АКЭС" HorizontalAlignment="Center" Height="40" Margin="0,250,0,0" VerticalAlignment="Top" Width="250" FontSize="15"/>
+            <Button x:Name="Access_but_Copy" Content="Добавить пользователя" HorizontalAlignment="Center" Height="40" Margin="0,300,0,0" VerticalAlignment="Top" Width="250" FontSize="15"/>
+            <Button x:Name="Access_but_Copy1" Content="Добавить АКЭС" HorizontalAlignment="Center" Height="40" Margin="0,350,0,0" VerticalAlignment="Top" Width="250" FontSize="15"/>
 
         </Grid>
     </Grid>

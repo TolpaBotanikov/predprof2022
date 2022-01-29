@@ -22,9 +22,9 @@ namespace predprof2022
             InitializeComponent();
         }
 
-        private void Authorization_window_SizeChanged(object sender, SizeChangedEventArgs e)
+        private void Auth_but_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Menu());
         }
     }
 }

@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Registration">
     <StackPanel x:Name="Registration_grid" Margin="250,125,250,71.6" Height="253" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
-        <Label Content="Регистрация" HorizontalAlignment="Left" Height="40" Margin="18,0,0,0" Width="251" HorizontalContentAlignment="Center" FontSize="20"/>
+        <Label Content="Регистрация пользователя" HorizontalAlignment="Center" Height="40" Margin="0" Width="280" HorizontalContentAlignment="Center" FontSize="20"/>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Width="112" TextAlignment="Right" VerticalAlignment="Center" HorizontalAlignment="Left"><Run Text="Введите л"/><Run Text="огин:"/></TextBlock>
             <TextBox x:Name="loginTb" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -17,12 +17,8 @@
             <TextBlock Width="109" TextAlignment="Right" VerticalAlignment="Center" HorizontalAlignment="Center"><Run Text="Введите "/><Run Text="п"/><Run Text="ароль:"/></TextBlock>
             <PasswordBox x:Name="passwordTb" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,5,0,5">
-            <TextBlock Width="109" TextAlignment="Right" VerticalAlignment="Center" HorizontalAlignment="Center"><Run Text="Повторите пароль"/><Run Text=":"/></TextBlock>
-            <PasswordBox x:Name="repit_passwordTb" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </StackPanel>
-        <CheckBox x:Name="Adm_check_box" Content="Зарегистрироваться как администратор" HorizontalAlignment="Center" Width="243" VerticalAlignment="Center" Margin="30,0,27,0" Checked="CheckBox_Checked"/>
-        <Button x:Name="Reg_but" Content="Зарегистрироваться" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <CheckBox x:Name="Adm_check_box" Content="Зарегистрировать как администратора" HorizontalAlignment="Center" Width="243" VerticalAlignment="Center" Margin="30,0,27,0" Checked="CheckBox_Checked"/>
+        <Button x:Name="Reg_but" Content="Зарегистрировать" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="88,20,88,5" Width="124"/>
         <Label x:Name="Error_lab" Content="" Height="25" Margin="0" Width="148" HorizontalContentAlignment="Center"/>
     </StackPanel>
 </Page>

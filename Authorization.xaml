@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:predprof2022"
         mc:Ignorable="d"
-        Title="MainWindow" Height="440" Width="810" SizeChanged="Authorization_window_SizeChanged">
-    <StackPanel x:Name="Authorization_grid" Margin="255,125,254.6,65" Height="250" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+        Title="MainWindow" Height="440" Width="810">
+    <StackPanel x:Name="Authorization_grid" Margin="255,125,254.6,111" Height="204" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
         <Label Content="Авторизация" HorizontalAlignment="Left" Height="40" Margin="18,0,0,0" Width="251" HorizontalContentAlignment="Center" FontSize="20"/>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Width="112" TextAlignment="Right" VerticalAlignment="Center" HorizontalAlignment="Left"><Run Text="Введите л"/><Run Text="огин:"/></TextBlock>
@@ -16,9 +16,7 @@
             <TextBlock Width="109" TextAlignment="Right" VerticalAlignment="Center" HorizontalAlignment="Center"><Run Text="Введите "/><Run Text="п"/><Run Text="ароль:"/></TextBlock>
             <PasswordBox x:Name="passwordTb" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </StackPanel>
-        <Button x:Name="Auth_but" Content="Войти" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Content="или" Height="25" Margin="0" Width="168" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button x:Name="Reg_but" Content="Зарегестрироваться" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="Auth_but" Content="Войти" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Auth_but_Click"/>
         <Label x:Name="Error_lab" Content="" Height="25" Margin="0" Width="148" HorizontalContentAlignment="Center"/>
     </StackPanel>
 </Page>

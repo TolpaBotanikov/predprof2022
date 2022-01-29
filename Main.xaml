@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Main" Height="450" Width="800">
     <Grid>
-        <Frame Content="Frame" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,-0.4,0" Source="/predprof2022;component/Authorization.xaml"/>
+        <Frame Content="Frame" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/predprof2022;component/Authorization.xaml"/>
 
     </Grid>
 </Window>
