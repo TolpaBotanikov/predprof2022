@@ -25,9 +25,16 @@ namespace predprof2022
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void See_data(object sender, RoutedEventArgs e)
         {
-
+            if(sender == Graf_but)
+            {
+                NavigationService.Navigate(new Graf());
+            }
+            else if (sender == Table_but)
+            {
+                NavigationService.Navigate(new Table());
+            }
         }
     }
 }

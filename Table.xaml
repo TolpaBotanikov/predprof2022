@@ -1,0 +1,71 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:predprof2022"
+      xmlns:Charting="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization" x:Class="predprof2022.Table"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Table">
+    <Page.Resources>
+        <CollectionViewSource x:Key="aKES_outputsViewSource" d:DesignSource="{d:DesignInstance {x:Type local:AKES_outputs}, CreateList=True}"/>
+    </Page.Resources>
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0" DataContext="{StaticResource aKES_outputsViewSource}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Меню" HorizontalAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Top" Height="37" Margin="367,5,367,0" Width="66"/>
+        <Label Content="Выберите АКЭС" HorizontalAlignment="Center" VerticalAlignment="Center" Height="25" Margin="352,50,352,52.2" Width="96"/>
+        <ComboBox x:Name="Combobox" HorizontalAlignment="Center" VerticalAlignment="Center" Width="228" Height="20" Margin="286,75,286,32.2" DisplayMemberPath="id" SelectionChanged="Combobox_SelectionChanged"/>
+        <Button x:Name="toMenu" Content="В меню" HorizontalAlignment="Left" Margin="697,10,0,0" VerticalAlignment="Top" Width="75" Click="toMenu_Click"/>
+        <DataGrid x:Name="aKES_outputsDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Grid.Row="1" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="active_blocksColumn" Binding="{Binding active_blocks}" Header="active blocks" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="active_power_AColumn" Binding="{Binding active_power_A}" Header="active power A" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="active_power_A_offColumn" Binding="{Binding active_power_A_off}" Header="active power A off" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="active_power_BColumn" Binding="{Binding active_power_B}" Header="active power B" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="active_power_B_offColumn" Binding="{Binding active_power_B_off}" Header="active power B off" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="active_power_CColumn" Binding="{Binding active_power_C}" Header="active power C" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="active_power_C_offColumn" Binding="{Binding active_power_C_off}" Header="active power C off" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="akes_idColumn" Binding="{Binding akes_id}" Header="akes id" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="cos_AColumn" Binding="{Binding cos_A}" Header="cos A" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="cos_A_offColumn" Binding="{Binding cos_A_off}" Header="cos A off" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="cos_BColumn" Binding="{Binding cos_B}" Header="cos B" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="cos_B_offColumn" Binding="{Binding cos_B_off}" Header="cos B off" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="cos_CColumn" Binding="{Binding cos_C}" Header="cos C" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="cos_C_offColumn" Binding="{Binding cos_C_off}" Header="cos C off" Width="SizeToHeader"/>
+                <DataGridTemplateColumn x:Name="datetime_endColumn" Header="datetime end" Width="SizeToHeader">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DatePicker SelectedDate="{Binding datetime_end, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn x:Name="datetime_startColumn" Header="datetime start" Width="SizeToHeader">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DatePicker SelectedDate="{Binding datetime_start, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn x:Name="effectivenessColumn" Binding="{Binding effectiveness}" Header="effectiveness" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="idColumn" Binding="{Binding id}" Header="id" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="jet_power_AColumn" Binding="{Binding jet_power_A}" Header="jet power A" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="jet_power_A_offColumn" Binding="{Binding jet_power_A_off}" Header="jet power A off" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="jet_power_BColumn" Binding="{Binding jet_power_B}" Header="jet power B" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="jet_power_B_offColumn" Binding="{Binding jet_power_B_off}" Header="jet power B off" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="jet_power_CColumn" Binding="{Binding jet_power_C}" Header="jet power C" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="jet_power_C_offColumn" Binding="{Binding jet_power_C_off}" Header="jet power C off" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="voltage_AColumn" Binding="{Binding voltage_A}" Header="voltage A" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="voltage_A_offColumn" Binding="{Binding voltage_A_off}" Header="voltage A off" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="voltage_BColumn" Binding="{Binding voltage_B}" Header="voltage B" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="voltage_B_offColumn" Binding="{Binding voltage_B_off}" Header="voltage B off" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="voltage_CColumn" Binding="{Binding voltage_C}" Header="voltage C" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="voltage_C_offColumn" Binding="{Binding voltage_C_off}" Header="voltage C off" Width="SizeToHeader"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Page>
